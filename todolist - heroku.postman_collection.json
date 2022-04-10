@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "b63fb65f-d4ec-4596-a7e3-663181dae558",
+		"name": "todolist - heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得代辦事項",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ancient-river-41293.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"ancient-river-41293",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增代辦事項",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"ken\"\n}"
+				},
+				"url": {
+					"raw": "https://ancient-river-41293.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"ancient-river-41293",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有代辦事項",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://ancient-river-41293.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"ancient-river-41293",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆代辦事項",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://ancient-river-41293.herokuapp.com/todos/:uuid",
+					"protocol": "https",
+					"host": [
+						"ancient-river-41293",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						":uuid"
+					],
+					"variable": [
+						{
+							"key": "uuid",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "修改單筆代辦事項",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"hex\"\n}"
+				},
+				"url": {
+					"raw": "https://ancient-river-41293.herokuapp.com/todos/:uuid",
+					"protocol": "https",
+					"host": [
+						"ancient-river-41293",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						":uuid"
+					],
+					"variable": [
+						{
+							"key": "uuid",
+							"value": "37ab53a7-3e9e-4101-a926-3d5a4f7f6ecf"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
